@@ -40,6 +40,7 @@ let flag2=true;
 function checkInformationEmpty() {
     if (information.children.length===0) {
         information.innerHTML = '<p>No information available. Please fill in the form.</p>';
+        flag2=true;
     }
     else{
         if(flag2){
