@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p>Home Page</p>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <form id="myForm">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name " spellcheck="false" name="name" id="name" autocomplete="off" required>
+            </div>
+
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter the description"  autocomplete="off" spellcheck="false" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="information">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

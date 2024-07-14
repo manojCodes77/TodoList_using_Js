@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(255, 194, 73);
+    background: linear-gradient(0deg, rgba(255, 194, 73, 1) 0%, rgba(255, 122, 101, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+}
+
+nav {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+    padding-block: 1%;
+    transition: all 0.3s ease;
+}
+
+#toggle-dark-mode {
+    background-color: #421d1d;
+    color: rgb(255, 117, 117);
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggle-dark-mode:hover {
+    transform: scale(1.1);
+    background-color: #c22d2d;
+    color: rgb(52, 20, 14);
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin: 2vh auto;
+    padding: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom right, #e0f7fa, #fffde7);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+textarea {
+    min-height: 3rem;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 10rem;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.information {
+    max-width: 500px;
+    width: 90%;
+    margin: 2vh auto;
+    padding: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom right, #e0f7fa, #fffde7);
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.information p {
+    margin-bottom: 10px;
+}
+
+.information .entry {
+    margin-bottom: 2vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffc249;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.information .entry:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    transform: scale(1.07);
+    border-radius: 4vh;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: -moz-radial-gradient(circle, rgba(255, 194, 73, 1) 0%, rgba(110, 106, 106, 1) 0%, rgba(62, 60, 60, 1) 100%, rgba(18, 8, 8, 1) 100%, rgba(255, 56, 230, 1) 100%, rgba(255, 81, 209, 1) 100%, rgba(254, 122, 73, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255, 194, 73, 1) 0%, rgba(110, 106, 106, 1) 0%, rgba(62, 60, 60, 1) 100%, rgba(18, 8, 8, 1) 100%, rgba(255, 56, 230, 1) 100%, rgba(255, 81, 209, 1) 100%, rgba(254, 122, 73, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 194, 73, 1) 0%, rgba(110, 106, 106, 1) 0%, rgba(62, 60, 60, 1) 100%, rgba(18, 8, 8, 1) 100%, rgba(255, 56, 230, 1) 100%, rgba(255, 81, 209, 1) 100%, rgba(254, 122, 73, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc249", endColorstr="#fe7a49", GradientType=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+body.dark-mode nav {
+    background-color: #333;
+}
+
+body.dark-mode #toggle-dark-mode {
+    background-color: #cf9494;
+    color: rgb(4, 3, 3);
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode #toggle-dark-mode:hover {
+    background-color: #421d1d;
+    color: rgb(255, 117, 117);
+    transform: scale(1.1);
+}
+
+body.dark-mode .container,
+body.dark-mode .information {
+    background: -moz-radial-gradient(circle, #ffc249 0%, rgba(110, 106, 106, 1) 0%, rgba(62, 60, 60, 1) 100%, rgba(18, 8, 8, 1) 100%, rgba(255, 56, 230, 1) 100%, rgba(255, 81, 209, 1) 100%, rgba(254, 122, 73, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255, 194, 73, 1) 0%, rgba(110, 106, 106, 1) 0%, rgba(62, 60, 60, 1) 100%, rgba(18, 8, 8, 1) 100%, rgba(255, 56, 230, 1) 100%, rgba(255, 81, 209, 1) 100%, rgba(254, 122, 73, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 194, 73, 1) 0%, rgba(110, 106, 106, 1) 0%, rgba(62, 60, 60, 1) 100%, rgba(18, 8, 8, 1) 100%, rgba(255, 56, 230, 1) 100%, rgba(255, 81, 209, 1) 100%, rgba(254, 122, 73, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc249", endColorstr="#fe7a49", GradientType=1);
+}
+
+body.dark-mode label {
+    color: white;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode textarea {
+    background-color: #1a1717;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode input[type="submit"] {
+    background-color: #271616;
+}
+
+body.dark-mode input[type="submit"]:hover {
+    background-color: #100505
+}
+.information {
+    color: rgb(90, 18, 18);
+}
+
+.dark-mode .information {
+    color: rgb(255, 209, 209);
+}
+
+body.dark-mode .information .entry {
+    background-color: #000000;
+    color: #ffc249;
+    background: #1a1717;
+    color: white;
+    border: 1px solid #555;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .information .entry:hover {
+    background-color: #921111;
+    color: #ffffff;
+    transform: scale(1.07);
+    border-radius: 4vh;
+}
+
+.information .entry button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.information .entry button:hover {
+    background-color: #c0392b;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #380505;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: #661111;
+    border-radius: 10px;
+}
